@@ -12,10 +12,10 @@ int ft_strlen(char *str)
     return (i);
 }
 
-#include <stdio.h>
-int main(void)
-{
-    printf("Length of \"Hello\" = %d", ft_strlen("Hello"));
+// #include <stdio.h>
+// int main(void)
+// {
+//     printf("Length of \"Hello\" = %d", ft_strlen("Hello"));
 
-    return (0);
-}
+//     return (0);
+// }

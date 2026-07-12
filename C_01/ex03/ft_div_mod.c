@@ -1,7 +1,19 @@
-void ft_div_mod(int a, int b, int *div, int *mod)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ssaengsa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/12 13:43:20 by ssaengsa          #+#    #+#             */
+/*   Updated: 2026/07/12 13:45:59 by ssaengsa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-    *div = a / b;
-    *mod = a % b; 
+	*div = a / b;
+	*mod = a % b;
 }
 
 // #include <stdio.h>
@@ -9,10 +21,8 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 // {
 // 	int div;
 // 	int mod;
- 
 // 	ft_div_mod(4, 2, &div, &mod);
 // 	printf("17 / 5 -> div = %d (expected 2)\n", div);
 // 	printf("17 %% 5 -> mod = %d (expected 0)\n", mod);
-
 //     return (0);
 // }

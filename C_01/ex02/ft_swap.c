@@ -1,12 +1,22 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ssaengsa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/12 13:28:58 by ssaengsa          #+#    #+#             */
+/*   Updated: 2026/07/12 13:42:59 by ssaengsa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_swap(int *a, int *b)   // a -> variable holding 5 or X , b -> variable holding 10 or Y
+void	ft_swap(int *a, int *b)
 {
-	int tmp;
+	int	tmp;
 
-	tmp = *a;   // tmp = 5 (copy the value a points to)
-	*a = *b;    // the variable a points to now holds 10 (copied FROM *b)
-	*b = tmp;   // the variable b points to now holds 5 (copied FROM tmp)
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 // #include <stdio.h>

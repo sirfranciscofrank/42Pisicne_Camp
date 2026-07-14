@@ -1,37 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ssaengsa <ssaengsa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/12 14:39:01 by ssaengsa          #+#    #+#             */
-/*   Updated: 2026/07/14 15:05:20 by ssaengsa         ###   ########.fr       */
+/*   Created: 2026/07/13 12:37:43 by ssaengsa          #+#    #+#             */
+/*   Updated: 2026/07/13 13:39:36 by ssaengsa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	is_uppercase(char c)
+{
+	return (c >= 'A' && c <= 'Z');
+}
+
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (str[i])
 	{
-		dest[i] = src[i];
+		if (is_uppercase(str[i]))
+			str[i] += 32;
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (str);
 }
 
 // #include <stdio.h>
 
-// int main(void)
+// int	main(void)
 // {
-//     char src[] = "Hello";
-//     char dest[3];         
+// 	char	s1[] = "ABCD";
+// 	char	s2[] = "hELLO 42!";
 
-//     ft_strcpy(dest, src);   
-//     printf("%s\n", dest);
-//     return (0);
+// 	printf("%s %s\n", ft_strlowcase(s1), ft_strlowcase(s2));
+// 	return (0);
 // }

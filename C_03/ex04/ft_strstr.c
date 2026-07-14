@@ -30,19 +30,19 @@ char	*ft_strstr(char *str, char *to_find)
 	return (0);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-char	*ft_strstr(char *str, char *to_find);
+// char	*ft_strstr(char *str, char *to_find);
 
-int	main(void)
-{
-	char	haystack[] = "the quick brown fox";
+// int	main(void)
+// {
+// 	char	haystack[] = "the quick brown fox";
 
-	printf("%s\n", ft_strstr(haystack, "brown"));  // [brown fox]
-	printf("%s\n", ft_strstr(haystack, "the"));    // [the quick brown fox]
-	printf("%s\n", ft_strstr(haystack, "fox"));    // [fox]
-	printf("%s\n", ft_strstr(haystack, ""));       // [the quick brown fox]
-	printf("%p\n", ft_strstr(haystack, "zebra"));  // [(nil)]
-	printf("%s\n", ft_strstr("aaab", "aab"));      // [aab]
-	return (0);
-}
+// 	printf("%s\n", ft_strstr(haystack, "brown"));  // [brown fox]
+// 	printf("%s\n", ft_strstr(haystack, "the"));    // [the quick brown fox]
+// 	printf("%s\n", ft_strstr(haystack, "fox"));    // [fox]
+// 	printf("%s\n", ft_strstr(haystack, ""));       // [the quick brown fox]
+// 	printf("%p\n", ft_strstr(haystack, "zebra"));  // [(nil)]
+// 	printf("%s\n", ft_strstr("aaab", "aab"));      // [aab]
+// 	return (0);
+// }
